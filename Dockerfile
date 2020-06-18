@@ -37,7 +37,7 @@ YLZATHZKTJyiqA==\n\
     gpg --verify /work/awscliv2.sig /work/awscliv2.zip && \
     unzip awscliv2.zip && \
     ./aws/install && \
-    apt --purge autoremove -y zip gnupg curl && \
+    apt --purge autoremove -y zip gnupg && \
     rm -rf /var/lib/apt/lists && \
     cd / && rm -rf /work
 WORKDIR /aws
